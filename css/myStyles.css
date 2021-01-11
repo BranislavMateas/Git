@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1500px;
+  /*background-color: red;*/
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+  margin-right: 20px;
+}
+ul li {
+  margin-top: 30px;
+  display: inline-block;
+  line-height: 30px;
+}
+
+ul li::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ul li a {
+  font-size: 20px;
+  padding-left: 70px;
+  letter-spacing: 0.2px;
+}
+
+#logo {
+  margin-top: 21px;
+  /*float: left;*/
+  display: inline-block;
+}
+
+logo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#headline {
+  margin-top: 227px;
+  width: 732px;
+  letter-spacing: 0.2px;
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 700;
+}
+
+#subheadline {
+  letter-spacing: 0.2px;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  margin-top: 24px;
+  width: 732px;
+}
+
+.middle {
+  display: inline-block;
+}
+#heroIll {
+  float: right;
+  width: 733.16px;
+  margin-top: 114px;
+}
+
+.download {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  margin-top: 32px;
+  color: white;
+  background-color: #ff725e;
+  border-radius: 1092px;
+  border: none;
+  height: 66px;
+  text-align: center;
+  width: 279px;
+  letter-spacing: 0.2px;
+}
+
+.down {
+  font-weight: 700;
+}
