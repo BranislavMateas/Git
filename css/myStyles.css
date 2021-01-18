@@ -246,7 +246,7 @@ logo::after {
 }
 
 #companies {
-  margin-top: 200px;
+  margin-top: 168px;
   background-color: #ff725e;
   display: inline-block;
   text-align: left;
@@ -276,4 +276,76 @@ logo::after {
   line-height: 54px;
   margin: 0 auto;
   margin-bottom: 32px;
+}
+
+.nadpisB {
+  color: #263238;
+  letter-spacing: 0.2px;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 54px;
+  margin: 0 auto;
+  margin-top: 168px;
+}
+
+.detail {
+  color: #263238;
+  letter-spacing: 0.2px;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  line-height: 45px;
+}
+
+.lowerDetail {
+  color: #263238;
+  letter-spacing: 0.2px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 27px;
+}
+
+.lowerDetail strong {
+  font-weight: 700;
+}
+
+.tlacidlo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: white;
+  background-color: #ff725e;
+  /*border-radius: 1000px;*/
+  border: none;
+  height: 50px;
+  /*text-align: center;*/
+  width: 550px;
+  letter-spacing: 0.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  border-radius: 1092px;
+}
+
+.tlacidlo a {
+  text-decoration: none;
+  color: white;
+}
+
+.tlacidlo a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.poznamka {
+  color: #263238;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  line-height: 27px;
 }
