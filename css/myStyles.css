@@ -6,7 +6,6 @@
 html,
 body {
   font-family: "Montserrat", sans-serif;
-  min-height: 5300px;
   overflow-x: hidden;
 }
 
@@ -355,4 +354,63 @@ logo::after {
   font-family: "Montserrat", sans-serif;
   line-height: 27px;
   margin-top: 0px;
+}
+
+#references {
+  margin-top: 350px;
+}
+
+.refBox {
+  width: 434px;
+  height: 535px;
+  background-color: #ff725e;
+  border-radius: 60px;
+}
+
+.refBox p {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  line-height: 36px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.refBox h5 {
+  letter-spacing: 0.2px;
+  color: white;
+  font-weight: 700;
+  line-height: 27px;
+  font-size: 18px;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.que {
+  margin: 32px 40px;
+}
+
+#footer {
+  margin-top: 200px;
+  background-color: #263238;
+}
+
+#footer h6 {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  padding: 50px 0px;
+}
+
+#footer h6 a {
+  text-decoration: underline;
+  color: white;
+}
+
+#footer h6 a:visited {
+  text-decoration: underline;
+  color: white;
 }
