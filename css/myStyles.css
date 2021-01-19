@@ -445,7 +445,6 @@ DOWNLOAD PAGE
 }
 
 #pageTitle a {
-  font-size: 24px;
   text-align: center;
   margin: 0 auto;
   line-height: 36px;
@@ -519,12 +518,28 @@ DOWNLOAD PAGE
   margin-top: 50px;
 }
 
-#linux p {
+#linux ol {
+  list-style-position: inside;
   font-size: 20px;
   letter-spacing: 0.2px;
   color: #263238;
 }
 
+#linux ol li {
+  padding-left: 15px;
+}
+
+#linux i {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: #263238;
+}
+
+#linux p {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: #263238;
+}
 #linux strong {
   font-size: 24px;
   line-height: 36px;
@@ -533,4 +548,25 @@ DOWNLOAD PAGE
 
 #pageTitle p {
   text-align: center;
+}
+
+#update {
+  margin-top: 50px;
+}
+
+#update h1 {
+  text-align: left;
+  margin-top: 50px;
+}
+
+#update p {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: #263238;
+}
+
+#update strong {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
 }

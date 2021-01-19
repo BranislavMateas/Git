@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Download - Git</title>
+    <link rel="icon" href="./images/icon.png" size="64x64" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
@@ -29,18 +30,41 @@
       </div>
 
       <div id="pageTitle">
-        <h1>Download<br /><small>(2.30.0)</small></h1>
+        <h1>
+          Download<br /><small>(2.30.0) - </small
+          ><a
+            href="https://raw.githubusercontent.com/git/git/master/Documentation/RelNotes/2.30.0.txt"
+            target="_blank"
+            ><small><u>Changelog</u></small></a
+          >
+        </h1>
         <div class="flex-containerD">
           <h2 class="tlacidlo">
-            <a href="features.html">Download latest .exe for Windows</a>
+            <a
+              href="https://github.com/git-for-windows/git/releases/download/v2.30.0.windows.2/Git-2.30.0.2-64-bit.exe"
+              target="_blank"
+              style="font-size: 24px"
+              >Download latest .exe for Windows</a
+            >
           </h2>
           <h2 class="tlacidlo">
-            <a href="features.html">Download latest binary for MacOS</a>
+            <a
+              href="https://sourceforge.net/projects/git-osx-installer/"
+              target="_blank"
+              style="font-size: 24px"
+              >Download latest binary for MacOS</a
+            >
           </h2>
         </div>
         <p>
-          Older releases are available and the Git source repository is on
-          GitHub.
+          <a href="https://www.kernel.org/pub/software/scm/git/" target="_blank"
+            ><u>Older releases</u></a
+          >
+          are available and the
+          <a href="https://github.com/git/git" target="_blank"
+            ><u>Git source repository</u></a
+          >
+          is on GitHub.
         </p>
       </div>
       <div id="windows">
@@ -48,12 +72,27 @@
         <p>
           <strong>Git for Windows Setup</strong>
           <br />
-          <u>32-bit Git for Windows Setup</u><br />
-          <u>64-bit Git for Windows Setup</u><br />
+          <a
+            href="https://github.com/git-for-windows/git/releases/download/v2.30.0.windows.2/Git-2.30.0.2-32-bit.exe"
+            target="_blank"
+            ><u>32-bit Git for Windows Setup</u></a
+          ><br />
+          <a
+            href="https://github.com/git-for-windows/git/releases/download/v2.30.0.windows.2/Git-2.30.0.2-64-bit.exe"
+            target="_blank"
+            ><u>64-bit Git for Windows Setup</u></a
+          ><br />
           <br />
           <strong>Git for Windows Portable ("Thumbdrive edition")</strong>
-          <br /><u>32-bit Git for Windows Portable</u> <br /><u
-            >64-bit Git for Windows Portable</u
+          <br /><a
+            href="https://github.com/git-for-windows/git/releases/download/v2.30.0.windows.2/PortableGit-2.30.0.2-32-bit.7z.exe"
+            target="_blank"
+            ><u>32-bit Git for Windows Portable</u></a
+          >
+          <br /><a
+            href="https://github.com/git-for-windows/git/releases/download/v2.30.0.windows.2/PortableGit-2.30.0.2-64-bit.7z.exe"
+            target="_blank"
+            ><u>64-bit Git for Windows Portable</u></a
           >
           <br />
           <br />
@@ -64,30 +103,49 @@
         <p>
           There are several options for installing Git on macOS. Note that any
           non-source distributions are provided by third parties, and may not be
-          up to date with the latest <u>source release</u>.<br /><br />
+          up to date with the latest source release.<br /><br />
           <strong>Homebrew</strong>
           <br />
-          Install <u>homebrew</u> if you don't already have it, then: <br /><b
-            ><i>$ brew install git</i></b
-          ><br /><br />
+          Install
+          <a href="https://brew.sh/" target="_blank"><u>homebrew</u></a> if you
+          don't already have it, then: <br />
+          <i>$ brew install git</i><br /><br />
           <strong>Xcode</strong>
           <br />
-          Apple ships a binary package of Git with <u>Xcode</u>.
-          <br /><br /><strong>Binary installer</strong><br />
-          Tim Harper provides an <u>installer for Git</u>. The latest version is
-          2.27.0, which was released 6 months ago, on 2020-07-22. <br />
+          Apple ships a binary package of Git with
+          <a href="https://developer.apple.com/xcode/" target="_blank"
+            ><u>Xcode</u></a
+          >. <br /><br /><strong>Binary installer</strong><br />
+          Tim Harper provides an
+          <a
+            href="https://sourceforge.net/projects/git-osx-installer/"
+            target="_blank"
+            ><u>installer for Git</u></a
+          >. The latest version is
+          <a
+            href="https://sourceforge.net/projects/git-osx-installer/files/git-2.27.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect"
+            target="_blank"
+            ><u>2.27.0</u></a
+          >, which was released 6 months ago, on 2020-07-22. <br />
           <br />
           <strong>Building from Source</strong> <br />
 
           If you prefer to build from source, you can find tarballs on
-          <a href="https://mirrors.edge.kernel.org/pub/software/scm/git/"
+          <a href="https://www.kernel.org/pub/software/scm/git/" target="_blank"
             ><u>kernel.org.</u></a
           >
-          The latest version is 2.30.0. <br /><br />
+          > The latest version is
+          <a
+            href="https://www.kernel.org/pub/software/scm/git/git-2.30.0.tar.gz"
+            target="_blank"
+            ><u>2.30.0</u></a
+          >. <br /><br />
           <strong>Installing git-gui</strong><br />
           If you would like to install git-gui and gitk, git's commit GUI and
-          interactive history browser, you can do so using homebrew:<br />
-          <b><i>$ brew install git-gui</i></b>
+          interactive history browser, you can do so using
+          <a href="https://brew.sh/" target="_blank"><u>homebrew:</u></a
+          ><br />
+          <i>$ brew install git-gui</i>
           <br />
           <br />
         </p>
@@ -97,53 +155,97 @@
         <p>
           It is easiest to install Git on Linux using the preferred package
           manager of your Linux distribution. If you prefer to build from
-          source, you can find tarballs on kernel.org. The latest version is
-          2.30.0. <br /><br /><strong>Debian/Ubuntu</strong> <br />For the
-          latest stable version for your release of Debian/Ubuntu # apt-get
-          install git For Ubuntu, this PPA provides the latest stable upstream
-          Git version # add-apt-repository ppa:git-core/ppa # apt update; apt
-          install git
-          <br />
+          source, you can find tarballs on
+          <a
+            href="https://mirrors.edge.kernel.org/pub/software/scm/git/"
+            target="_blank"
+            ><u>kernel.org</u></a
+          >. The latest version is
+          <a
+            href="https://www.kernel.org/pub/software/scm/git/git-2.30.0.tar.gz"
+            target="_blank"
+            ><u>2.30.0</u></a
+          >. <br /><br /><strong>Debian/Ubuntu</strong> <br />For the latest
+          stable version for your release of Debian/Ubuntu <br /><i
+            ># apt-get install git</i
+          ><br /><br />
+          For Ubuntu, this PPA provides the latest stable upstream Git
+          version<br />
+        </p>
+        <ol>
+          <li><i># add-apt-repository ppa:git-core/ppa</i></li>
+          <li><i># apt update; apt install git</i></li>
+        </ol>
+
+        <p>
           <br /><strong>Fedora</strong><br />
-          # yum install git (up to Fedora 21) # dnf install git (Fedora 22 and
-          later) <br /><br />
-          # emerge --ask --verbose dev-vcs/git <br /><br /><strong
-            >Arch Linux<br /></strong
-          ># pacman -S git <br /><br /><strong>openSUSE</strong> <br /># zypper
-          install git <br /><br /><strong>Mageia</strong><br />
-          # urpmi git <br /><br /><strong>Nix/NixOS</strong><br />
-          # nix-env -i git <br /><br /><strong>FreeBSD</strong><br />
-          # pkg install git <br /><br /><strong
-            >Solaris 9/10/11 (<u>OpenCSW</u>)</strong
+          <i># yum install git</i> (up to Fedora 21)<br />
+          <i># dnf install git</i> (Fedora 22 and later) <br /><br />
+          <strong>Gentoo</strong><br /><i
+            ># emerge --ask --verbose dev-vcs/git</i
           >
-          <br /># pkgutil -i git <br /><br /><strong>Solaris 11 Express</strong
+          <br /><br /><strong>Arch Linux<br /></strong><i># pacman -S git</i>
+          <br /><br /><strong>openSUSE</strong> <br /><i
+            ># zypper install git</i
+          >
+          <br /><br /><strong>Mageia</strong><br />
+          <i># urpmi git</i> <br /><br /><strong>Nix/NixOS</strong><br />
+          <i> # nix-env -i git</i> <br /><br /><strong>FreeBSD</strong><br />
+          <i> # pkg install git</i> <br /><br /><strong
+            >Solaris 9/10/11 (<a href="https://www.opencsw.org/" target="_blank"
+              ><u>OpenCSW</u></a
+            >)</strong
+          >
+          <br /><i># pkgutil -i git</i> <br /><br /><strong
+            >Solaris 11 Express</strong
           ><br />
-          # pkg install developer/versioning/git
+          <i># pkg install developer/versioning/git</i>
           <br />
           <br /><strong>OpenBSD</strong><br />
-          # pkg_add git
+          <i># pkg_add git</i>
           <br />
           <br /><strong>Alpine</strong><br />
-          $ apk add git
+          <i>$ apk add git</i>
           <br />
           <br /><strong
             >Red Hat Enterprise Linux, Oracle Linux, CentOS, Scientific Linux,
             et al.</strong
           ><br />
           RHEL and derivatives typically ship older versions of git. You can
-          download a tarball and build from source, or use a 3rd-party
-          repository such as the IUS Community Project to obtain a more recent
-          version of git.
+          <a
+            href="https://mirrors.edge.kernel.org/pub/software/scm/git/"
+            target="_blank"
+            ><u>download a tarball</u></a
+          >
+          and build from source, or use a 3rd-party repository such as the
+          <a href="https://ius.io/" target="_blank"
+            ><u>IUS Community Project</u></a
+          >
+          to obtain a more recent version of git.
           <br />
           <br /><strong>Slitaz</strong><br />
-          $ tazpkg get-install git
+          <i>$ tazpkg get-install git</i>
+        </p>
+      </div>
+      <div id="update">
+        <h1 class="nadpisA">Git via Git</h1>
+        <p>
+          If you already have Git installed, you can get the latest development
+          version via Git itself:<br />
+          <i>git clone https://github.com/git/git</i><br /><br />
+
+          You can also always browse the current contents of the git repository
+          using the
+          <a href="https://github.com/git/git" target="blank"
+            ><u>web interface</u></a
+          >.
         </p>
       </div>
     </div>
     <div id="footer">
       <h6>
         Git is a member of <a>Software Freedom Conservancy</a><br /><br />
-        2021, Powered by Branislav Mateáš
+        2021, Powered by Branislav Mateáš.
       </h6>
     </div>
   </body>
