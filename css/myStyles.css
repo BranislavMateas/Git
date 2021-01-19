@@ -241,6 +241,12 @@ logo::after {
   margin-top: 200px;
 }
 
+.nadpisA small {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 .paragraph span {
   font-weight: 600;
 }
@@ -344,8 +350,9 @@ logo::after {
 .poznamka {
   color: #263238;
   letter-spacing: 0.2px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   line-height: 27px;
+  margin-top: 0px;
 }
