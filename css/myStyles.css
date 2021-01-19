@@ -1,6 +1,19 @@
+/* 
+  MAIN PAGE
+*/
+
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #263238;
+}
+
+a:visited {
+  color: #263238;
 }
 
 html,
@@ -413,4 +426,111 @@ logo::after {
 #footer h6 a:visited {
   text-decoration: underline;
   color: white;
+}
+
+/* 
+DOWNLOAD PAGE
+*/
+
+#pageTitle h1 {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30vh;
+  letter-spacing: 0.2px;
+  font-size: 54px;
+  line-height: 71px;
+  border-left: none;
+  border-right: none;
+  font-weight: 900;
+}
+
+#pageTitle a {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 36px;
+}
+
+.flex-containerD {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+#pageTitle small {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+#windows {
+  margin-top: 200px;
+}
+
+#windows h1 {
+  text-align: left;
+}
+
+#windows p {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: #263238;
+}
+#windows strong {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+}
+
+#macOS {
+  margin-top: 50px;
+}
+
+#macOS h1 {
+  text-align: left;
+  margin-top: 50px;
+}
+
+#macOS p {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: #263238;
+}
+
+#macOS strong {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+}
+
+#linux {
+  margin-top: 50px;
+}
+
+#linux h1 {
+  text-align: left;
+  margin-top: 50px;
+}
+
+#linux p {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: #263238;
+}
+
+#linux strong {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+}
+
+#pageTitle p {
+  text-align: center;
 }
