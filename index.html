@@ -1,6 +1,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Git - the best Version Control System on the planet">
+    <meta name="keywords" content="Free VCS, Git, Version Control System">
+    <meta name="author" content="Branislav Mateáš">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Git</title>
     <link rel="icon" href="./images/icon.png" size="64x64" />
@@ -12,13 +15,16 @@
     <link rel="stylesheet" href="./css/myStyles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="hero">
-        <div class="menu">
-          <img id="logo" src="./images/logo.png" alt="Git Logo" />
+    <div class="hero">
+      <div class="menu">
+        <div class="container1">
+          <a href="./index.html"
+            ><img id="logo" src="./images/logo.png" alt="Git Logo"
+          /></a>
           <ul>
             <li>
-              <a><strong>Home</strong></a>
+              <a href="./index.html"><strong><u>Home</u></strong></a
+              >
             </li>
             <li><a>Why Git?</a></li>
             <li><a>About</a></li>
@@ -26,7 +32,9 @@
             <li class="down"><a href="./download.html">Download</a></li>
           </ul>
         </div>
-
+      </div>
+    </div>
+      <div class="container">
         <div class="middle">
           <h1 id="headline">
             The right Version Control System for 21st century
@@ -36,14 +44,14 @@
             designed to handle everything from small to very large projects with
             speed and efficiency.
           </h2>
-          <button class="download">Download</button>
+          <a class="download_button" href="download.html">Download</a>
         </div>
         <img
           id="heroIll"
           src="./images/hero.png"
           alt="Version Control System Illustration"
         />
-      </div>
+      
       <div id="features">
         <h1 class="nadpis">Features</h1>
         <div class="flex-container">
@@ -118,10 +126,10 @@
           <img src="./images/About.png" alt="Git Version Control System" />
         </div>
       </div>
-    </div>
+    </div></div>
 
     <div id="companies">
-      <div class="container">
+      <div class="container1">
         <h1 class="nadpisC">Companies & Projects Using Git</h1>
         <a
           href="https://github.com/google"
@@ -168,26 +176,28 @@
             <h2 class="detail">Latest version: <strong>2.30.0</strong></h2>
             <br />
             <h4 class="lowerDetail">
-              What's new? Check out latest <a><u>Changelog</u></a> <br /><strong
+              What's new? Check out latest <a href="https://raw.githubusercontent.com/git/git/master/Documentation/RelNotes/2.30.0.txt" target="_blank"><u>Changelog</u></a> <br /><strong
                 >Github's source code</strong
               >
               is available
-              <a><u>here</u></a>
+              <a href="https://github.com/git/git" target="_blank"><u>here</u></a>
               <br />
               <br />
             </h4>
             <h1 class="tlacidlo">
-              <a href="features.html">Download latest .exe for Windows</a>
+              <a href="https://github.com/git-for-windows/git/releases/download/v2.30.0.windows.2/Git-2.30.0.2-64-bit.exe"
+              target="_blank">Download latest .exe for Windows</a>
             </h1>
             <h1 class="tlacidlo">
-              <a href="features.html">Download latest binary for MacOS</a>
+              <a href="https://sourceforge.net/projects/git-osx-installer/"
+              target="_blank">Download latest binary for MacOS</a>
             </h1>
             <h3 class="poznamka">
               <strong
                 >Are you looking for an older version or Linux
                 distribution?</strong
               >
-              Everything's available <u>here</u>.
+              Everything's available <a href="./download.html"><u>here</u></a>.
             </h3>
           </div>
 

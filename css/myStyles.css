@@ -21,11 +21,27 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
-
+.container1 {
+  width: 1500px;
+  margin: 0 auto;
+}
 .container {
   width: 1500px;
-  /*background-color: red;*/
   margin: 0 auto;
+  margin-top: 90px;
+}
+
+.container1 li a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.menu {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 2px -2px gray;
 }
 
 ul {
@@ -55,6 +71,7 @@ ul li a {
   margin-top: 21px;
   /*float: left;*/
   display: inline-block;
+  padding-bottom: 21px;
 }
 
 logo::after {
@@ -569,4 +586,29 @@ DOWNLOAD PAGE
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.2px;
+}
+
+.download_button {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 56px;
+  margin-top: 24px;
+  color: white !important;
+  background-color: #ff725e;
+  border-radius: 1092px;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  width: 259px;
+  letter-spacing: 0.2px;
+  height: 56px;
+}
+
+.download_button a {
+  color: white !important;
+  margin: 0 auto;
+}
+
+.download_button a:visited {
+  color: white !important;
 }
