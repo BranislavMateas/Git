@@ -138,6 +138,7 @@ logo::after {
   line-height: 54px;
   margin: 0 auto;
   margin-top: 248px;
+  padding-bottom: 10px;
 }
 
 #box1 {
@@ -270,6 +271,25 @@ logo::after {
   margin-top: 200px;
   display: inline-block;
   vertical-align: baseline;
+}
+
+.nadpisD {
+  color: #263238;
+  letter-spacing: 0.2px;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 54px;
+  margin: 0 auto;
+  margin-top: 200px;
+  vertical-align: baseline;
+}
+
+.nadpisD small {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .nadpisA small {
@@ -461,6 +481,15 @@ DOWNLOAD PAGE
   border-left: none;
   border-right: none;
   font-weight: 900;
+}
+
+#pageTitle img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  margin-top: 200px;
+  margin-bottom: -300px;
 }
 
 #pageTitle a {
@@ -683,4 +712,25 @@ table th {
 .second {
   font-style: italic;
   font-weight: 400;
+}
+
+/*
+DOCUMENTATION PAGE
+*/
+
+#aboutFeatures h2 {
+  padding-bottom: 10px;
+}
+
+code {
+  background-color: #161b22;
+  color: white;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #263238;
+  font-weight: 600;
 }
