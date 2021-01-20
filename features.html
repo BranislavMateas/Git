@@ -1,344 +1,340 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Git - the best Version Control System on the planet"
-    />
-    <meta name="keywords" content="Free VCS, Git, Version Control System" />
-    <meta name="author" content="Branislav Mateáš" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Features - Git</title>
-    <link rel="icon" href="./images/icon.png" size="64x64" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/myStyles.css" />
-  </head>
-  <body>
-    <div class="hero">
-      <div class="menu">
-        <div class="container1">
-          <a href="./index.html"
-            ><img id="logo" src="./images/logo.png" alt="Git Logo"
-          /></a>
-          <ul>
-            <li>
-              <a href="./index.html">Home</a>
-            </li>
-            <li>
-              <a href="./features.html"
-                ><u><strong>Features</strong></u></a
-              >
-            </li>
-            <li><a href="./cheatsheet.html">Documentation</a></li>
-            <li class="down">
-              <a href="./download.html">Download</a>
-            </li>
-          </ul>
-        </div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="description"
+         content="Git - the best Version Control System on the planet"
+         />
+      <meta name="keywords" content="Free VCS, Git, Version Control System" />
+      <meta name="author" content="Branislav Mateáš" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Features - Git</title>
+      <link rel="icon" href="./images/icon.png" size="64x64" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" href="./css/myStyles.css" />
+   </head>
+   <body>
+      <div class="hero">
+         <div class="menu">
+            <div class="container1">
+               <a href="./index.html"
+                  ><img id="logo" src="./images/logo.png" alt="Git Logo"
+                  /></a>
+               <ul>
+                  <li>
+                     <a href="./index.html">Home</a>
+                  </li>
+                  <li>
+                     <a href="./features.html"
+                        ><u><strong>Features</strong></u></a
+                        >
+                  </li>
+                  <li><a href="./community.html">Community</a></li>
+                  <li><a href="./cheatsheet.html">Documentation</a></li>
+                  <li class="down">
+                     <a href="./download.html">Download</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
       </div>
-    </div>
-
-    <div class="container1">
-      <div id="pageTitle">
-        <h1>
-          Features<br />
-          <small>Discover features of Git in detail</small>
-        </h1>
+      <div class="container1">
+         <div id="pageTitle">
+            <h1>
+               Features<br />
+               <small>Discover features of Git in detail</small>
+            </h1>
+         </div>
+         <div id="aboutFeatures">
+            <h1 class="nadpis">Branching and Merging</h1>
+            <p>
+               The Git feature that really makes it stand apart from nearly every
+               other SCM out there is its branching model.<br /><br />
+               Git allows and encourages you to have multiple local branches that can
+               be entirely independent of each other. The creation, merging, and
+               deletion of those lines of development takes seconds. <br /><br />
+            </p>
+            <ul>
+               <p>This means that you can do things like:</p>
+               <li>
+                  <strong>Frictionless Context Switching.</strong> Create a branch to
+                  try out an idea, commit a few times, switch back to where you
+                  branched from, apply a patch, switch back to where you are
+                  experimenting, and merge it in.
+               </li>
+               <li>
+                  <strong>Role-Based Codelines.</strong> Have a branch that always
+                  contains only what goes to production, another that you merge work
+                  into for testing, and several smaller ones for day to day work.
+               </li>
+               <li>
+                  <strong>Feature Based Workflow.</strong> Create new branches for
+                  each new feature you're working on so you can seamlessly switch back
+                  and forth between them, then delete each branch when that feature
+                  gets merged into your main line.
+               </li>
+               <li>
+                  <strong>Disposable Experimentation.</strong> Create a branch to
+                  experiment in, realize it's not going to work, and just delete it -
+                  abandoning the work—with nobody else ever seeing it (even if you've
+                  pushed other branches in the meantime).
+               </li>
+            </ul>
+            <div class="flex-container">
+               <p style="width: 700px">
+                  Notably, when you push to a remote repository, you do not have to
+                  push all of your branches. You can choose to share just one of your
+                  branches, a few of them, or all of them. This tends to free people
+                  to try new ideas without worrying about having to plan how and when
+                  they are going to merge it in or share it with others.<br /><br />
+                  There are ways to accomplish some of this with other systems, but
+                  the work involved is much more difficult and error-prone. Git makes
+                  this process incredibly easy and it changes the way most developers
+                  work when they learn it.
+               </p>
+               <img
+                  src="./images/branches.png"
+                  alt="Branches"
+                  style="width: 700px"
+                  />
+            </div>
+            <h1 class="nadpis">Data Assurance</h1>
+            <p>
+               The data model that Git uses ensures the cryptographic integrity of
+               every bit of your project. Every file and commit is checksummed and
+               retrieved by its checksum when checked back out. It's impossible to
+               get anything out of Git other than the
+               <strong>exact bits you put in.</strong>
+            </p>
+            <div class="flex-container">
+               <p style="width: 700px; padding-top: 150px">
+                  It is also impossible to change any file, date, commit message, or
+                  any other data in a Git repository without changing the IDs of
+                  everything after it. This means that if you have a commit ID, you
+                  can be assured not only that your project is exactly the same as
+                  when it was committed, but that nothing in its history was changed.
+                  <br /><br />
+                  Most centralized version control systems provide no such integrity
+                  by default. work when they learn it.
+               </p>
+               <img
+                  src="./images/assurance.png"
+                  alt="Assurance"
+                  style="width: 700px"
+                  />
+            </div>
+            <h1 class="nadpis">Staging Area</h1>
+            <p>
+               Unlike the other systems, Git has something called the "staging area"
+               or "index". This is an intermediate area where commits can be
+               formatted and reviewed before completing the commit.<br /><br />
+               One thing that sets Git apart from other tools is that it's possible
+               to quickly stage some of your files and commit them without committing
+               all of the other modified files in your working directory or having to
+               list them on the command line during the commit.
+            </p>
+            <div class="flex-container">
+               <p style="width: 700px; padding-top: 100px">
+                  This allows you to stage only portions of a modified file. Gone are
+                  the days of making two logically unrelated modifications to a file
+                  before you realized that you forgot to commit one of them. Now you
+                  can just stage the change you need for the current commit and stage
+                  the other change for the next commit. This feature scales up to as
+                  many different changes to your file as needed.
+               </p>
+               <img src="./images/staging1.png" alt="Staging" style="width: 700px" />
+            </div>
+            <div class="flex-container">
+               <img src="./images/staging2.png" alt="Staging" class="imgCenter" />
+               <p style="padding-top: 120px; width: 700px">
+                  This allows you to stage only portions of a modified file. Gone are
+                  the days of making two logically unrelated modifications to a file
+                  before you realized that you forgot to commit one of them. Now you
+                  can just stage the change you need for the current commit and stage
+                  the other change for the next commit. This feature scales up to as
+                  many different changes to your file as needed.
+               </p>
+            </div>
+            <h1 class="nadpis">Small and Fast</h1>
+            <p>
+               <strong>Git is fast.</strong> With Git, nearly all operations are
+               performed locally, giving it a huge speed advantage on centralized
+               systems that constantly have to communicate with a server
+               somewhere.<br /><br />
+               Git was built to work on the Linux kernel, meaning that it has had to
+               effectively handle large repositories from day one. Git is written in
+               C, reducing the overhead of runtimes associated with higher-level
+               languages. Speed and performance has been a primary design goal of the
+               Git from the start.<br /><br />
+               Let's see how common operations stack up against Subversion, a common
+               centralized version control system that is similar to CVS or Perforce.
+               <em>Smaller is faster.</em>
+            </p>
+            <img width="100%" src="./images/benchmark.png" alt="Benchmark" />
+            <p>
+               For testing, large AWS instances were set up in the same availability
+               zone. Git and SVN were installed on both machines, the Ruby repository
+               was copied to both Git and SVN servers, and common operations were
+               performed on both.<br />
+               <br />
+               In some cases the commands don't match up exactly. Here, matching on
+               the lowest common denominator was attempted. For example, the 'commit'
+               tests also include the time to push for Git, though most of the time
+               you would not actually be pushing to the server immediately after a
+               commit where the two commands cannot be separated in SVN.<br /><br />
+               All of these times are in seconds.
+            </p>
+            <table>
+               <tr class="first">
+                  <th>Operation</th>
+                  <th></th>
+                  <th>Git</th>
+                  <th>SVN</th>
+                  <th></th>
+               </tr>
+               <tr>
+                  <th>Commit Files (A)</th>
+                  <th class="second">
+                     Add, commit and push 113 modified files (2164+, 2259-)
+                  </th>
+                  <th>0.64</th>
+                  <th>2.60</th>
+                  <th>4x</th>
+               </tr>
+               <tr>
+                  <th>Commit Files (B)</th>
+                  <th class="second">Add, commit and push a thousand 1 kB images</th>
+                  <th>1.53</th>
+                  <th>24.70</th>
+                  <th>16x</th>
+               </tr>
+               <tr>
+                  <th>Diff Current</th>
+                  <th class="second">
+                     Diff 187 changed files (1664+, 4859-) against last commit
+                  </th>
+                  <th>0.25</th>
+                  <th>1.09</th>
+                  <th>4x</th>
+               </tr>
+               <tr>
+                  <th>Diff Recent</th>
+                  <th class="second">
+                     Diff against 4 commits back (269 changed/3609+,6898-)
+                  </th>
+                  <th>0.25</th>
+                  <th>3.99</th>
+                  <th>16x</th>
+               </tr>
+               <tr>
+                  <th>Diff Tags</th>
+                  <th class="second">
+                     Diff two tags against each other (v1.9.1.0/v1.9.3.0)
+                  </th>
+                  <th>1.17</th>
+                  <th>83.57</th>
+                  <th>71x</th>
+               </tr>
+               <tr>
+                  <th>Log (50)</th>
+                  <th class="second">Log of the last 50 commits (19 kB of output)</th>
+                  <th>0.01</th>
+                  <th>0.38</th>
+                  <th>31x</th>
+               </tr>
+               <tr>
+                  <th>Log (All)</th>
+                  <th class="second">
+                     Log of all commits (26,056 commits – 9.4 MB of output)
+                  </th>
+                  <th>0.52</th>
+                  <th>169.20</th>
+                  <th>325x</th>
+               </tr>
+               <tr>
+                  <th>Log (File)</th>
+                  <th class="second">
+                     Log of the history of a single file (array.c – 483 revs)
+                  </th>
+                  <th>0.60</th>
+                  <th>82.84</th>
+                  <th>138x</th>
+               </tr>
+               <tr>
+                  <th>Update</th>
+                  <th class="second">
+                     Pull of Commit A scenario (113 files changed, 2164+, 2259-)
+                  </th>
+                  <th>0.90</th>
+                  <th>2.82</th>
+                  <th>3x</th>
+               </tr>
+               <tr>
+                  <th>Blame</th>
+                  <th class="second">Line annotation of a single file (array.c)</th>
+                  <th>1.91</th>
+                  <th>3.04</th>
+                  <th>1x</th>
+               </tr>
+            </table>
+            <p>
+               Note that this is the best case scenario for SVN—a server with no load
+               with a gigabit connection to the client machine. Nearly all of these
+               times would be even worse for SVN if that connection was slower, while
+               many of the Git times would not be affected. <br /><br />Clearly, in
+               many of these common version control operations,
+               <strong>Git is one or two orders of magnitude faster than SVN</strong
+                  >, even under ideal conditions for SVN.<br /><br />
+               One place where Git is slower is in the initial clone operation. Here,
+               Git is downloading the entire history rather than only the latest
+               version. As seen in the above charts, it's not considerably slower for
+               an operation that is only performed once.
+            </p>
+            <table>
+               <tr class="first">
+                  <th>Operation</th>
+                  <th></th>
+                  <th>Git*</th>
+                  <th>Git</th>
+                  <th>SVN</th>
+               </tr>
+               <tr>
+                  <th>Clone</th>
+                  <th class="second">
+                     Clone and shallow clone(*) in Git vs checkout in SVN
+                  </th>
+                  <th>21.0</th>
+                  <th>107.5</th>
+                  <th>14.0</th>
+               </tr>
+               <tr>
+                  <th>Size (MB)</th>
+                  <th class="second">
+                     Size of total client side data and files after clone/checkout (in
+                     MB)
+                  </th>
+                  <th></th>
+                  <th>181.0</th>
+                  <th>132.0</th>
+               </tr>
+            </table>
+            <p>
+               It's also interesting to note that the size of the data on the client
+               side is very similar even though Git also has every version of every
+               file for the entire history of the project. This illustrates how
+               efficient it is at compressing and storing data on the client side.
+            </p>
+         </div>
       </div>
-      <div id="aboutFeatures">
-        <h1 class="nadpis">Branching and Merging</h1>
-        <p>
-          The Git feature that really makes it stand apart from nearly every
-          other SCM out there is its branching model.<br /><br />
-          Git allows and encourages you to have multiple local branches that can
-          be entirely independent of each other. The creation, merging, and
-          deletion of those lines of development takes seconds. <br /><br />
-        </p>
-        <ul>
-          <p>This means that you can do things like:</p>
-          <li>
-            <strong>Frictionless Context Switching.</strong> Create a branch to
-            try out an idea, commit a few times, switch back to where you
-            branched from, apply a patch, switch back to where you are
-            experimenting, and merge it in.
-          </li>
-          <li>
-            <strong>Role-Based Codelines.</strong> Have a branch that always
-            contains only what goes to production, another that you merge work
-            into for testing, and several smaller ones for day to day work.
-          </li>
-          <li>
-            <strong>Feature Based Workflow.</strong> Create new branches for
-            each new feature you're working on so you can seamlessly switch back
-            and forth between them, then delete each branch when that feature
-            gets merged into your main line.
-          </li>
-
-          <li>
-            <strong>Disposable Experimentation.</strong> Create a branch to
-            experiment in, realize it's not going to work, and just delete it -
-            abandoning the work—with nobody else ever seeing it (even if you've
-            pushed other branches in the meantime).
-          </li>
-        </ul>
-        <div class="flex-container">
-          <p style="width: 700px">
-            Notably, when you push to a remote repository, you do not have to
-            push all of your branches. You can choose to share just one of your
-            branches, a few of them, or all of them. This tends to free people
-            to try new ideas without worrying about having to plan how and when
-            they are going to merge it in or share it with others.<br /><br />
-            There are ways to accomplish some of this with other systems, but
-            the work involved is much more difficult and error-prone. Git makes
-            this process incredibly easy and it changes the way most developers
-            work when they learn it.
-          </p>
-          <img
-            src="./images/branches.png"
-            alt="Branches"
-            style="width: 700px"
-          />
-        </div>
-
-        <h1 class="nadpis">Data Assurance</h1>
-        <p>
-          The data model that Git uses ensures the cryptographic integrity of
-          every bit of your project. Every file and commit is checksummed and
-          retrieved by its checksum when checked back out. It's impossible to
-          get anything out of Git other than the
-          <strong>exact bits you put in.</strong>
-        </p>
-        <div class="flex-container">
-          <p style="width: 700px; padding-top: 150px">
-            It is also impossible to change any file, date, commit message, or
-            any other data in a Git repository without changing the IDs of
-            everything after it. This means that if you have a commit ID, you
-            can be assured not only that your project is exactly the same as
-            when it was committed, but that nothing in its history was changed.
-            <br /><br />
-            Most centralized version control systems provide no such integrity
-            by default. work when they learn it.
-          </p>
-          <img
-            src="./images/assurance.png"
-            alt="Assurance"
-            style="width: 700px"
-          />
-        </div>
-
-        <h1 class="nadpis">Staging Area</h1>
-        <p>
-          Unlike the other systems, Git has something called the "staging area"
-          or "index". This is an intermediate area where commits can be
-          formatted and reviewed before completing the commit.<br /><br />
-          One thing that sets Git apart from other tools is that it's possible
-          to quickly stage some of your files and commit them without committing
-          all of the other modified files in your working directory or having to
-          list them on the command line during the commit.
-        </p>
-        <div class="flex-container">
-          <p style="width: 700px; padding-top: 100px">
-            This allows you to stage only portions of a modified file. Gone are
-            the days of making two logically unrelated modifications to a file
-            before you realized that you forgot to commit one of them. Now you
-            can just stage the change you need for the current commit and stage
-            the other change for the next commit. This feature scales up to as
-            many different changes to your file as needed.
-          </p>
-          <img src="./images/staging1.png" alt="Staging" style="width: 700px" />
-        </div>
-        <div class="flex-container">
-          <img src="./images/staging2.png" alt="Staging" class="imgCenter" />
-          <p style="padding-top: 120px; width: 700px">
-            This allows you to stage only portions of a modified file. Gone are
-            the days of making two logically unrelated modifications to a file
-            before you realized that you forgot to commit one of them. Now you
-            can just stage the change you need for the current commit and stage
-            the other change for the next commit. This feature scales up to as
-            many different changes to your file as needed.
-          </p>
-        </div>
-        <h1 class="nadpis">Small and Fast</h1>
-        <p>
-          <strong>Git is fast.</strong> With Git, nearly all operations are
-          performed locally, giving it a huge speed advantage on centralized
-          systems that constantly have to communicate with a server
-          somewhere.<br /><br />
-          Git was built to work on the Linux kernel, meaning that it has had to
-          effectively handle large repositories from day one. Git is written in
-          C, reducing the overhead of runtimes associated with higher-level
-          languages. Speed and performance has been a primary design goal of the
-          Git from the start.<br /><br />
-          Let's see how common operations stack up against Subversion, a common
-          centralized version control system that is similar to CVS or Perforce.
-          <em>Smaller is faster.</em>
-        </p>
-        <img width="100%" src="./images/benchmark.png" alt="Benchmark" />
-        <p>
-          For testing, large AWS instances were set up in the same availability
-          zone. Git and SVN were installed on both machines, the Ruby repository
-          was copied to both Git and SVN servers, and common operations were
-          performed on both.<br />
-          <br />
-          In some cases the commands don't match up exactly. Here, matching on
-          the lowest common denominator was attempted. For example, the 'commit'
-          tests also include the time to push for Git, though most of the time
-          you would not actually be pushing to the server immediately after a
-          commit where the two commands cannot be separated in SVN.<br /><br />
-          All of these times are in seconds.
-        </p>
-        <table>
-          <tr class="first">
-            <th>Operation</th>
-            <th></th>
-            <th>Git</th>
-            <th>SVN</th>
-            <th></th>
-          </tr>
-          <tr>
-            <th>Commit Files (A)</th>
-            <th class="second">
-              Add, commit and push 113 modified files (2164+, 2259-)
-            </th>
-            <th>0.64</th>
-            <th>2.60</th>
-            <th>4x</th>
-          </tr>
-          <tr>
-            <th>Commit Files (B)</th>
-            <th class="second">Add, commit and push a thousand 1 kB images</th>
-            <th>1.53</th>
-            <th>24.70</th>
-            <th>16x</th>
-          </tr>
-          <tr>
-            <th>Diff Current</th>
-            <th class="second">
-              Diff 187 changed files (1664+, 4859-) against last commit
-            </th>
-            <th>0.25</th>
-            <th>1.09</th>
-            <th>4x</th>
-          </tr>
-          <tr>
-            <th>Diff Recent</th>
-            <th class="second">
-              Diff against 4 commits back (269 changed/3609+,6898-)
-            </th>
-            <th>0.25</th>
-            <th>3.99</th>
-            <th>16x</th>
-          </tr>
-          <tr>
-            <th>Diff Tags</th>
-            <th class="second">
-              Diff two tags against each other (v1.9.1.0/v1.9.3.0)
-            </th>
-            <th>1.17</th>
-            <th>83.57</th>
-            <th>71x</th>
-          </tr>
-          <tr>
-            <th>Log (50)</th>
-            <th class="second">Log of the last 50 commits (19 kB of output)</th>
-            <th>0.01</th>
-            <th>0.38</th>
-            <th>31x</th>
-          </tr>
-          <tr>
-            <th>Log (All)</th>
-            <th class="second">
-              Log of all commits (26,056 commits – 9.4 MB of output)
-            </th>
-            <th>0.52</th>
-            <th>169.20</th>
-            <th>325x</th>
-          </tr>
-          <tr>
-            <th>Log (File)</th>
-            <th class="second">
-              Log of the history of a single file (array.c – 483 revs)
-            </th>
-            <th>0.60</th>
-            <th>82.84</th>
-            <th>138x</th>
-          </tr>
-          <tr>
-            <th>Update</th>
-            <th class="second">
-              Pull of Commit A scenario (113 files changed, 2164+, 2259-)
-            </th>
-            <th>0.90</th>
-            <th>2.82</th>
-            <th>3x</th>
-          </tr>
-          <tr>
-            <th>Blame</th>
-            <th class="second">Line annotation of a single file (array.c)</th>
-            <th>1.91</th>
-            <th>3.04</th>
-            <th>1x</th>
-          </tr>
-        </table>
-        <p>
-          Note that this is the best case scenario for SVN—a server with no load
-          with a gigabit connection to the client machine. Nearly all of these
-          times would be even worse for SVN if that connection was slower, while
-          many of the Git times would not be affected. <br /><br />Clearly, in
-          many of these common version control operations,
-          <strong>Git is one or two orders of magnitude faster than SVN</strong
-          >, even under ideal conditions for SVN.<br /><br />
-          One place where Git is slower is in the initial clone operation. Here,
-          Git is downloading the entire history rather than only the latest
-          version. As seen in the above charts, it's not considerably slower for
-          an operation that is only performed once.
-        </p>
-        <table>
-          <tr class="first">
-            <th>Operation</th>
-            <th></th>
-            <th>Git*</th>
-            <th>Git</th>
-            <th>SVN</th>
-          </tr>
-          <tr>
-            <th>Clone</th>
-            <th class="second">
-              Clone and shallow clone(*) in Git vs checkout in SVN
-            </th>
-            <th>21.0</th>
-            <th>107.5</th>
-            <th>14.0</th>
-          </tr>
-          <tr>
-            <th>Size (MB)</th>
-            <th class="second">
-              Size of total client side data and files after clone/checkout (in
-              MB)
-            </th>
-            <th></th>
-            <th>181.0</th>
-            <th>132.0</th>
-          </tr>
-        </table>
-        <p>
-          It's also interesting to note that the size of the data on the client
-          side is very similar even though Git also has every version of every
-          file for the entire history of the project. This illustrates how
-          efficient it is at compressing and storing data on the client side.
-        </p>
+      <div id="footer">
+         <h6>
+            Git is a member of Software Freedom Conservancy<br /><br />
+            2021, Powered by Branislav Mateáš.
+         </h6>
       </div>
-    </div>
-
-    <div id="footer">
-      <h6>
-        Git is a member of <a>Software Freedom Conservancy</a><br /><br />
-        2021, Powered by Branislav Mateáš.
-      </h6>
-    </div>
-  </body>
+   </body>
 </html>

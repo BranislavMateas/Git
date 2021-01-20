@@ -1,214 +1,209 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Git - the best Version Control System on the planet"
-    />
-    <meta name="keywords" content="Free VCS, Git, Version Control System" />
-    <meta name="author" content="Branislav Mateáš" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cheat Sheet - Git</title>
-    <link rel="icon" href="./images/icon.png" size="64x64" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/myStyles.css" />
-  </head>
-  <body>
-    <div class="hero">
-      <div class="menu">
-        <div class="container1">
-          <a href="./index.html"
-            ><img id="logo" src="./images/logo.png" alt="Git Logo"
-          /></a>
-          <ul>
-            <li>
-              <a href="./index.html">Home</a>
-            </li>
-            <li><a href="./features.html">Features</a></li>
-            <li>
-              <a href="./cheatsheet.html"
-                ><u><strong>Documentation</strong></u></a
-              >
-            </li>
-            <li class="down">
-              <a href="./download.html">Download</a>
-            </li>
-          </ul>
-        </div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="description"
+         content="Git - the best Version Control System on the planet"
+         />
+      <meta name="keywords" content="Free VCS, Git, Version Control System" />
+      <meta name="author" content="Branislav Mateáš" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Cheat Sheet - Git</title>
+      <link rel="icon" href="./images/icon.png" size="64x64" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" href="./css/myStyles.css" />
+   </head>
+   <body>
+      <div class="hero">
+         <div class="menu">
+            <div class="container1">
+               <a href="./index.html"
+                  ><img id="logo" src="./images/logo.png" alt="Git Logo"
+                  /></a>
+               <ul>
+                  <li>
+                     <a href="./index.html">Home</a>
+                  </li>
+                  <li><a href="./features.html">Features</a></li>
+                  <li><a href="./community.html">Community</a></li>
+                  <li>
+                     <a href="./cheatsheet.html"
+                        ><u><strong>Documentation</strong></u></a
+                        >
+                  </li>
+                  <li class="down">
+                     <a href="./download.html">Download</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="container1">
+            <div id="pageTitle">
+               <img src="./images/doc.png" width="300px" alt="Documentation" />
+               <h1>
+                  Documentation<br />
+                  <small
+                     >Start with Git by reading a cheat sheet by
+                  <a href="https://github.com/yablko" target="_blank"
+                     ><u>@yablko</u></a
+                     ></small
+                     >
+               </h1>
+            </div>
+            <div id="aboutFeatures">
+               <h1 class="nadpis">Git Settings</h1>
+               <h2>Check if you have Git installed by typing:<br /></h2>
+               <code>git --version</code>
+               <h2>
+                  <br />Set <strong>username and password</strong> (<i
+                     >if you use Github, use github data</i
+                     >).
+               </h2>
+               <code>git config --global user.name "yourname"</code>
+               <br /><br />
+               <code>git config --global user.email "your@email.hu"</code>
+               <h1 class="nadpis">Git Basics</h1>
+               <h2>Activate Git for your project.</h2>
+               <code>git init</code>
+               <br /><br /><br />
+               <h2>Check status / see what has changed.</h2>
+               <code>git status</code>
+               <br /><br /><br />
+               <h2>
+                  If you make a change to a file and want it
+                  <strong>in a new version of the project</strong>, select it.
+               </h2>
+               <code>git add index.html</code>
+               <br /><br /><br />
+               <h2>
+                  Carve the change into stone.
+                  <strong>Always add a brief description of the change</strong>.
+               </h2>
+               <code>git commit -m "I added index.html"</code>
+               <br /><br /><br />
+               <h2>See project development.</h2>
+               <code>git log</code>
+               <h1 class="nadpis">Extra Piece of Git</h1>
+               <h2>
+                  Mark all <strong>.png</strong> files from the images directory.
+               </h2>
+               <code>git add images/*.png</code>
+               <br /><br /><br />
+               <h2>Mark all of this directory (except deleted files).</h2>
+               <code>git add .</code>
+               <br /><br /><br />
+               <h2>Mark all of this directory (including deleted files).</h2>
+               <code>git add -A</code>
+               <br /><br /><br />
+               <h2>To unmark files.</h2>
+               <code>git restore --staged .</code>
+               <br /><br /><br />
+               <h2>
+                  Commit all <strong>changed</strong> (not new) files.<br />
+                  Add a comment now.
+               </h2>
+               <code>git commit -a </code>
+               <br /><br />
+               <code>git commit -am "I modified the code, and now it's good."</code>
+               <br /><br /><br />
+               <h2>Simplify the log. Put it on one line.</h2>
+               <code>git log --graph --decorate --abbrev-commit --all </code
+                  ><br /><br />
+               <code
+                  >git log --graph --decorate --abbrev-commit --all
+               --pretty=oneline</code
+                  >
+               <br /><br /><br />
+               <h2>
+                  If you save <strong>index.html</strong> but screw it up. And you
+                  want to go back to the git version.
+               </h2>
+               <code>git checkout -- index.html</code>
+               <br /><br /><br />
+               <h2>
+                  You will find a hash commit via the git log. Skip the first few
+                  characters (eg c10e47f) and this way you can jump to an older
+                  version of the project.
+               </h2>
+               <code>git checkout c10e47f</code>
+               <br /><br /><br />
+               <h2>Go back to the current version.</h2>
+               <code>git checkout master</code>
+               <h1 class="nadpis">How to turn off VIM</h1>
+               <code>- Press "i"</code>
+               <br /><br />
+               <code>- Write commit comment</code>
+               <br /><br />
+               <code>- Press Esc</code>
+               <br /><br />
+               <code>- Write :wq</code>
+               <br /><br />
+               <h2>
+                  And the <strong>up / down arrows and q</strong> if the git log is
+                  close.
+               </h2>
+               <h1 class="nadpis">Remote Server</h1>
+               <h2>Clone the project to your directory.</h2>
+               <code
+                  >git clone https://github.com/user/yourproject.git
+               yourdirectory</code
+                  >
+               <br /><br />
+               <h2>
+                  Create a link to an external server (or a specific repository).
+               </h2>
+               <code
+                  >git remote add origin
+               https://github.com/ty/link-on-your-project.git</code
+                  >
+               <br /><br />
+               <h2>
+                  Print changes from your computer to the server. (Enter github name /
+                  password.)
+               </h2>
+               <code>git push origin master</code> <br /><br />
+               <h2>Upload changes from the server to your computer.</h2>
+               <code>git pull origin master</code><br /><br />
+               <h2>Check the server for changes.</h2>
+               <code>git remote update </code><br /><br />
+               <code>git status</code><br /><br />
+               <h2>Plus or minus what changes were they?</h2>
+               <code>git whatchanged origin/master -n 1</code><br /><br />
+               <h1 class="nadpis">Git Branch/Merge</h1>
+               <h2>
+                  If <strong>you are making a bugfix, make a bugfix branch</strong>.
+                  If you are doing a new feature, make a new feature branch.
+               </h2>
+               <code>git branch bugfix</code><br /><br />
+               <h2>
+                  Switch to the new bugfix branch. <i>Do your commits there.</i>
+               </h2>
+               <code>git checkout bugfix</code><br /><br />
+               <h2>When you have the feature ready, switch to the main branch.</h2>
+               <code>git checkout master</code><br /><br />
+               <h2>And merge changes from bugfix to it.</h2>
+               <code>git merge bugfix</code><br />
+               <p>
+                  Try to read
+                  <a
+                     href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing"
+                     target="_blank"
+                     ><u>merge vs rebase</u></a
+                     >
+                  article.
+               </p>
+            </div>
+         </div>
       </div>
-      <div class="container1">
-        <div id="pageTitle">
-          <img src="./images/doc.png" width="300px" alt="Documentation" />
-          <h1>
-            Documentation<br />
-            <small
-              >Start with Git by reading a cheat sheet by
-              <a href="https://github.com/yablko" target="_blank"
-                ><u>@yablko</u></a
-              ></small
-            >
-          </h1>
-        </div>
-        <div id="aboutFeatures">
-          <h1 class="nadpis">Git Settings</h1>
-          <h2>Check if you have Git installed by typing:<br /></h2>
-          <code>git --version</code>
-          <h2>
-            <br />Set <strong>username and password</strong> (<i
-              >if you use Github, use github data</i
-            >).
-          </h2>
-          <code>git config --global user.name "yourname"</code>
-          <br /><br />
-          <code>git config --global user.email "your@email.hu"</code>
-
-          <h1 class="nadpis">Git Basics</h1>
-          <h2>Activate Git for your project.</h2>
-          <code>git init</code>
-          <br /><br /><br />
-          <h2>Check status / see what has changed.</h2>
-          <code>git status</code>
-          <br /><br /><br />
-          <h2>
-            If you make a change to a file and want it
-            <strong>in a new version of the project</strong>, select it.
-          </h2>
-          <code>git add index.html</code>
-          <br /><br /><br />
-          <h2>
-            Carve the change into stone.
-            <strong>Always add a brief description of the change</strong>.
-          </h2>
-          <code>git commit -m "I added index.html"</code>
-          <br /><br /><br />
-          <h2>See project development.</h2>
-          <code>git log</code>
-
-          <h1 class="nadpis">Extra Piece of Git</h1>
-          <h2>
-            Mark all <strong>.png</strong> files from the images directory.
-          </h2>
-          <code>git add images/*.png</code>
-          <br /><br /><br />
-          <h2>Mark all of this directory (except deleted files).</h2>
-          <code>git add .</code>
-          <br /><br /><br />
-          <h2>Mark all of this directory (including deleted files).</h2>
-          <code>git add -A</code>
-          <br /><br /><br />
-          <h2>To unmark files.</h2>
-          <code>git restore --staged .</code>
-          <br /><br /><br />
-          <h2>
-            Commit all <strong>changed</strong> (not new) files.<br />
-            Add a comment now.
-          </h2>
-          <code>git commit -a </code>
-          <br /><br />
-          <code>git commit -am "I modified the code, and now it's good."</code>
-          <br /><br /><br />
-          <h2>Simplify the log. Put it on one line.</h2>
-          <code>git log --graph --decorate --abbrev-commit --all </code
-          ><br /><br />
-          <code
-            >git log --graph --decorate --abbrev-commit --all
-            --pretty=oneline</code
-          >
-          <br /><br /><br />
-          <h2>
-            If you save <strong>index.html</strong> but screw it up. And you
-            want to go back to the git version.
-          </h2>
-          <code>git checkout -- index.html</code>
-          <br /><br /><br />
-          <h2>
-            You will find a hash commit via the git log. Skip the first few
-            characters (eg c10e47f) and this way you can jump to an older
-            version of the project.
-          </h2>
-          <code>git checkout c10e47f</code>
-          <br /><br /><br />
-          <h2>Go back to the current version.</h2>
-          <code>git checkout master</code>
-
-          <h1 class="nadpis">How to turn off VIM</h1>
-          <code>- Press "i"</code>
-          <br /><br />
-          <code>- Write commit comment</code>
-          <br /><br />
-          <code>- Press Esc</code>
-          <br /><br />
-          <code>- Write :wq</code>
-          <br /><br />
-          <h2>
-            And the <strong>up / down arrows and q</strong> if the git log is
-            close.
-          </h2>
-
-          <h1 class="nadpis">Remote Server</h1>
-          <h2>Clone the project to your directory.</h2>
-          <code
-            >git clone https://github.com/user/yourproject.git
-            yourdirectory</code
-          >
-          <br /><br />
-          <h2>
-            Create a link to an external server (or a specific repository).
-          </h2>
-          <code
-            >git remote add origin
-            https://github.com/ty/link-on-your-project.git</code
-          >
-          <br /><br />
-          <h2>
-            Print changes from your computer to the server. (Enter github name /
-            password.)
-          </h2>
-          <code>git push origin master</code> <br /><br />
-          <h2>Upload changes from the server to your computer.</h2>
-          <code>git pull origin master</code><br /><br />
-          <h2>Check the server for changes.</h2>
-          <code>git remote update </code><br /><br />
-          <code>git status</code><br /><br />
-          <h2>Plus or minus what changes were they?</h2>
-          <code>git whatchanged origin/master -n 1</code><br /><br />
-
-          <h1 class="nadpis">Git Branch/Merge</h1>
-          <h2>
-            If <strong>you are making a bugfix, make a bugfix branch</strong>.
-            If you are doing a new feature, make a new feature branch.
-          </h2>
-          <code>git branch bugfix</code><br /><br />
-          <h2>
-            Switch to the new bugfix branch. <i>Do your commits there.</i>
-          </h2>
-          <code>git checkout bugfix</code><br /><br />
-          <h2>When you have the feature ready, switch to the main branch.</h2>
-          <code>git checkout master</code><br /><br />
-          <h2>And merge changes from bugfix to it.</h2>
-          <code>git merge bugfix</code><br />
-          <p>
-            Try to read
-            <a
-              href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing"
-              target="_blank"
-              ><u>merge vs rebase</u></a
-            >
-            article.
-          </p>
-        </div>
+      <div id="footer">
+         <h6>
+            Git is a member of Software Freedom Conservancy<br /><br />
+            2021, Powered by Branislav Mateáš.
+         </h6>
       </div>
-    </div>
-
-    <div id="footer">
-      <h6>
-        Git is a member of <a>Software Freedom Conservancy</a><br /><br />
-        2021, Powered by Branislav Mateáš.
-      </h6>
-    </div>
-  </body>
+   </body>
 </html>
